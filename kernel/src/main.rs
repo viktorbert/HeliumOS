@@ -20,7 +20,7 @@ mod heap;
 
 #[entry]
 fn main(a0: usize) -> ! {
-    println!("\x1b[0;32\nmHello world from hart {}\n\x1b[0m", a0);
+    println!("\x1b[0;32m\nHello world from hart {}\n\x1b[0m", a0);
 
 
     // Initialize kernel heap allocator
