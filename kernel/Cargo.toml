@@ -4,3 +4,5 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+riscv-rt = {version = "0.11", features = ["s-mode"]}
+sbi = "0.2" # provides a wrapper around the SBI functions to make them easier to use
