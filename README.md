@@ -19,3 +19,8 @@ cd ./kernel
 
 cargo run
 ```
+
+## Long Term goals
+- GUI
+- Netstack
+- A custom Lisp runtime, based *roughly* on Clojure in terms of syntax and with a CLOS-style OOP system
