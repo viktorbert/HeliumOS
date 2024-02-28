@@ -8,7 +8,7 @@ Dependencies:
 - rustup
 - qemu-system-riscv
 
-...
+```
 rustup toolchain install stable
 
 rustup component add rust-src --toolchain stable
@@ -18,4 +18,4 @@ rustup target add riscv64gc-unknown-none-elf --toolchain stable
 cd ./kernel
 
 cargo run
-...
+```
