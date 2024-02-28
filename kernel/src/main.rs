@@ -8,7 +8,8 @@ extern crate riscv_rt;
 // Kernel control flow
 use riscv_rt::entry;
 mod panic_handler;
-mod utils;
+mod system_control;
+mod io;
 
 // Kernel memory management
 extern crate alloc;
@@ -36,5 +37,5 @@ fn main(a0: usize) -> ! {
 
     println!("{:?}", v);
 
-    utils::shutdown();
+    system_control::shutdown();
 }
