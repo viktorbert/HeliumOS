@@ -91,7 +91,7 @@ pub fn uart_init(base_addr: usize) {
 }
 
 
-fn uart_get(base_addr: usize) -> Option<u8> {
+pub fn uart_get(base_addr: usize) -> Option<u8> {
     let ptr = base_addr as *mut u8;
     unsafe {
         // Bit index #5 is the Line Control Register.
